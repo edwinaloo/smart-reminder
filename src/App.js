@@ -1,17 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/global.css";
 
-// Import pages
+
 import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import TaskManagement from "./pages/TaskManagement";
-
-// Import components
 import Navbar from "./components/Navbar";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Navbar />
@@ -24,5 +21,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
