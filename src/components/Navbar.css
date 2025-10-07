@@ -1,23 +1,28 @@
-.navbar {
+/* Reset basic styling */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #007bff;
+  justify-content: flex-start;
+}
+
+.navbar ul li a {
+  display: block;
   color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
 }
 
-.navbar h1 {
-  font-size: 1.5rem;
-}
-
-.navbar a {
-  color: white;
-  margin-left: 1rem;
-  transition: opacity 0.3s ease;
-}
-
-.navbar a:hover {
-  opacity: 0.8;
+.navbar ul li a:hover {
+  background-color: #111111;
 }

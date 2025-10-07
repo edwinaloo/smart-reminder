@@ -1,17 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h1>Smart Reminder</h1>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Signup</Link>
-        <Link to="/tasks">Tasks</Link>
-      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
     </nav>
   );
 }
